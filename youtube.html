@@ -1,0 +1,111 @@
+<html>
+	<head>
+<link rel = 'shortcut icon' class = 'new' href = 'youtube.png'>
+		<title>Youtube</title>
+	</head>
+	
+	<body>	
+	<script>	
+	function myFunction()
+	{
+		var myForm = document.getElementById("input2");
+		var input3 = myForm.elements[0].value; // reads the input in the form tag
+	
+	
+	if (input3 == "pokemon playlist" ) {
+		// alert("Page location is " + window.location.href);
+		window.location.assign("playlist.html");
+	}
+	 else if (input3 == "shay and shail's playdate videos" ) {
+		// alert("Page location is " + window.location.href);
+		window.location.assign("playdate_songs.html");
+	}
+	 else if (input3 == "shay and shail's videos" ) {
+		// alert("Page location is " + window.location.href);
+		window.location.assign("shay_and_shail_playlist.html");
+	}
+	else if (input3 == "invinsible" ) {
+		// alert("Page location is " + window.location.href);
+		window.location.assign("invinsible.html");
+	}
+	else if (input3 == "cocomelon" ) {
+		// alert("Page location is " + window.location.href);
+		window.location.assign("cocomelon.html");
+	}
+	else if (input3 == "magic school bus" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("magicschoolbus1.html");
+	}
+	else if (input3 == "pokemon" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("pokemon2.html");
+    }else if (input3 == "octonauts" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("octonauts1.html");
+    }
+	else if (input3 == "" ){
+	myFunction4(input3);
+	}
+	  else {
+	  myFunction3(input3);
+	  }
+	}
+	myFunction2 = function(){
+	   window.location.assign("youtube's_for_you.html");
+	}
+	function myFunction3(input3){
+	   document.getElementById("errormessage").innerHTML = "couldn't find result";
+	}
+	function myFunction4(input3){
+	   document.getElementById("errormessage").innerHTML = "please write something below";
+	}
+	function newFunction(){
+		var myForm = document.getElementById("input2");
+		var input3 = myForm.elements[0].value; // reads the input in the form tag
+
+		if (input3 == "search for stuff..." ) {
+		// alert("Page location is " + window.location.href);
+		document.getElementById("input4").value="";
+}
+}
+	</script>
+<button onclick="myFunction2()">for you</button>	
+	<p id="errormessage"></p>
+	<form id="input2">
+		<input type="text" name="name" id="input4" value="search for stuff..." onclick="newFunction()" width="1000px" />
+	</form>	
+	<button type="button" onclick="myFunction()">enter</button>
+	<h3>pokemon</h3>
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/pQt9Vsc7S5M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/tSa4wQIaSpM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/N3Rf6SVoIDk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/EpyGGA3rxCY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<video tabindex="-1" class="video-stream html5-main-video" controlslist="nodownload" style="width: 427px; height: 240px; left: 0px; top: 0px;" src="blob:https://www.youtube.com/4889d122-4073-40b5-abce-34b5db5a020e"></video>
+	<br>
+	<h3>nursery rhymes</h3>
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/DjpbzHnLmhc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/2DsbojM2Qc0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/nlVCrUXEFwo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<br>
+	<h3>coding</h3>
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/videoseries?list=PLsyeobzWxl7qtP8Lo9TReqUMkiOp446cV" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/1PnVor36_40" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+	<style>
+	.red-message{
+	color:red;
+	}
+	#input4 {
+    opacity: 0.7;
+    }
+	</style>
+	</body>
+</html>
