@@ -1,0 +1,41 @@
+<html>
+<head>
+<link rel = 'shortcut icon' class = 'new' href = 'youtube.png'>
+	<title>pokewatch</title>
+<head>
+
+<body>
+<button onclick = 'previous_song()'>home page</button>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yhUAYBrYVCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<style>
+button{
+padding:10px;
+display:inline-block;
+cursor:pointer;
+color:#fff;
+background-color:#4caf50;
+border:none;
+border-radius:15px;
+box-shadow:0 5px #999;
+transition-duration:0.4s;
+}
+button:hover{
+background-color:#f44336;
+}
+button:active{
+background-color:#3e8141;
+box-shadow:0 2px #666;
+transform:translateY(4px);
+</style>
+<button onclick = 'next_song()'>next song</button>
+<script>
+next_song = function(){
+	window.location.assign("file:///C:/Users/seyth/OneDrive/Documents/HTML/pokewatch1.html")
+	}
+	previous_song = function(){
+	window.location.assign("file:///C:/Users/seyth/OneDrive/Documents/HTML/playlist.html")
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel = 'shortcut icon' href = 'youtube.png'>
+        <title>invinsible song</title>
+        </head>
+        <body>
+            
+             <script>	
+                function myFunction()
+                {
+                    var myForm = document.getElementById("input2");
+                    var input3 = myForm.elements[0].value; // reads the input in the form tag
+                
+                
+                if (input3 == "pokemon playlist" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("playlist.html");
+                } else if (input3 == "shay and shail's playdate videos" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("playdate_songs.html");
+                } else if (input3 == "shay and shail's videos" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("shay_and_shail_playlist.html");
+                }else if (input3 == "invinsible" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("invinsible.html");
+                }else if (input3 == "cocomelon" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("cocomelon.html");
+                }else if (input3 == "home" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("youtube.html");
+                }else if (input3 == "magic school bus" ) {
+                    // alert("Page location is " + window.location.href);
+                    window.location.assign("magicschoolbus1.html");
+                }
+                else if (input3 == "" ){
+                myFunction4(input3);
+                }
+                  else {
+                  myFunction3(input3);
+                  }
+                }
+                myFunction2 = function(){
+                   window.location.assign("youtube's_for_you.html");
+                }
+                function myFunction3(input3){
+                   document.getElementById("errormessage").innerHTML = "couldn't find result";
+                }
+                function myFunction4(input3){
+                   document.getElementById("errormessage").innerHTML = "please write something below";
+                }
+                function newFunction(){
+		var myForm = document.getElementById("input2");
+		var input3 = myForm.elements[0].value; // reads the input in the form tag
+
+		        if (input3 == "search for stuff..." ) {
+		        // alert("Page location is " + window.location.href);
+		        document.getElementById("input4").value="";
+                }
+                }
+                </script>
+                <p id="errormessage"></p>
+                <form id="input2">
+                    <input type="text" name="name" onclick="newFunction()" id="input4" value="search for stuff..." width="1000px" />
+                </form>
+                         <button type="button" onclick="myFunction()">enter</button>
+                <br>
+                <img src="type null vs lycanroc.jpg", hieght="100", width="200", onclick="myFunction5()"/><h3 id="lycanroc">lycanroc vs type null-Invinsible</h3><br>
+                <img src="ash grenija.jpg", hieght="100", width="200", onclick="myFunction6()"/><h3 id="lycanroc">ash greninja-stand tall</h3><br>
+                <img src="blastiose.jpg", hieght="100", width="200", onclick="myFunction7()"/><h3 id="lycanroc">charizard-Invinsible</h3><br>
+                <style>
+                    #lycanroc {
+                        opacity: 0.5;
+                    }
+                    #input4 {
+                        opacity: 0.7;
+                    }
+                    </style>
+
+                <script>
+                function myFunction5(){
+                    window.location.assign("invinsible2.html")
+                }
+                 function myFunction7(){
+                    window.location.assign("invinsible3.html")
+                }
+                function myFunction6(){
+                    window.location.assign("pokemon1.html")
+                }
+                    </script>
+                </body>
+        </html>
