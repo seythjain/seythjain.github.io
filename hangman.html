@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>hangman</title>
+        </head>
+    <body>
+        <button id="hello" onclick="play()">retry</button>
+        <script>
+            c = confirm("do you want to play hangman?")
+                if(c){
+                play();
+                }else{
+                document.getElementById("hello").innerHTML = "start";
+                }
+            function play(){
+            var words = [
+                "person",
+                "people",
+                "fishy",
+                "dad",
+                "do",
+                "pin",
+                "hit",
+                "radio",
+                "mom"
+            ];
+            var word = words[Math.floor(Math.random() * words.length)];
+            var awnserarray = [];
+            for (var i = 0; i < word.length; i++){
+                awnserarray[i] = "_"
+            };
+            var remainingLetters = word.length;
+            while(remainingLetters > 0){
+            alert(awnserarray.join(" "));
+            var guess = prompt("Guess a letter or, click Cancel to stop playing.");
+            if(guess === null) {
+                break;
+            } else if(guess.length !== 1){
+                alert("Please enter a single letter")
+            }
+            else{
+                alert("let's see if you got a letter")
+            }
+            for(var j = 0; j < word.length; j++) {
+                if(word[j] === guess) {
+                    awnserarray[j] = guess;
+                    remainingLetters--;
+                    alert(awnserarray.join(" "));
+                }
+            }
+        }
+    }
+            </script>
+        </body>
+    </html>
+
