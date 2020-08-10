@@ -34,8 +34,8 @@
             var guess = prompt("Guess a letter or, click Cancel to stop playing.");
             if(guess === null) {
                 break;
-            }else if{
-            alert("type only a single letter")
+            }else if(guess.length !== 1){
+                alert("Please enter a single letter")
             }
             else{
                 alert("let's see if you got a letter")
