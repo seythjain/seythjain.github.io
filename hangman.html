@@ -3,16 +3,43 @@
         <title>hangman</title>
         </head>
     <body>
-        <button id="hello" onclick="play()">retry</button>
+        <h2>
+            <h1>words</h1>
+
+            height
+            person
+            people
+            fishy
+            dad
+            do
+            pin
+            hit
+            radio
+            mom
+            hi
+            hello
+            monitor
+            keyboard
+            the
+            best
+            end
+            home
+            hello
+            find
+            fit
+            so
+            and
+            dive
+            kangaroo
+            new
+            hundred
+            one
+            twenty
+            telivision</h2>
         <script>
-            c = confirm("do you want to play hangman?")
-                if(c){
-                play();
-                }else{
-                document.getElementById("hello").innerHTML = "start";
-                }
-            function play(){
+
             var words = [
+                "height",
                 "person",
                 "people",
                 "fishy",
@@ -21,7 +48,27 @@
                 "pin",
                 "hit",
                 "radio",
-                "mom"
+                "mom",
+                "hi",
+                "hello",
+                "monitor",
+                "keyboard",
+                "the",
+                "best",
+                "end",
+                "home",
+                "hello",
+                "find",
+                "fit",
+                "so",
+                "and",
+                "dive",
+                "kangaroo",
+                "new",
+                "hundred",
+                "one",
+                "twenty",
+                "telivision"
             ];
             var word = words[Math.floor(Math.random() * words.length)];
             var awnserarray = [];
@@ -34,11 +81,12 @@
             var guess = prompt("Guess a letter or, click Cancel to stop playing.");
             if(guess === null) {
                 break;
-            }else if(guess.length !== 1){
-                alert("Please enter a single letter")
+            }
+            else if(guess.length !== 1){
+                alert("Please enter a single letter.");
             }
             else{
-                alert("let's see if you got a letter")
+                alert("let's see if you got a letter");
             }
             for(var j = 0; j < word.length; j++) {
                 if(word[j] === guess) {
@@ -48,7 +96,6 @@
                 }
             }
         }
-    }
             </script>
         </body>
     </html>
